@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Url;
-use \codemix\localeurls\LanguageChangedEvent;
+use \daxslab\localeurls\LanguageChangedEvent;
 
 class EventTest extends TestCase
 {

@@ -1,13 +1,17 @@
 {
-    "name": "codemix/yii2-localeurls",
+    "name": "daxslab/yii2-localeurls",
     "description": "Automatic locale/language management for URLs.",
     "keywords": ["yii2", "i18n", "locale"],
     "type": "yii2-extension",
     "license": "MIT",
     "authors": [
         {
-            "name": "Michael Härtl",
-            "email": "haertl.mike@gmail.com"
+            "name": "Gabriel A. López López",
+            "email": "glpz@daxslab.com"
+        },
+        {
+            "name": "Carlos Cesar Caballero Díaz",
+            "email": "ccesar@daxslab.com"
         }
     ],
     "require": {
@@ -21,7 +25,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "codemix\\localeurls\\": ""
+            "daxslab\\localeurls\\": ""
         }
     }
 }

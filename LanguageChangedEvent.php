@@ -1,5 +1,5 @@
 <?php
-namespace codemix\localeurls;
+namespace daxslab\localeurls;
 
 use yii\base\Event;
 

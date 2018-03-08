@@ -1,14 +1,14 @@
 Yii2 Locale URLs
 ================
 
-[![Build Status](https://secure.travis-ci.org/codemix/yii2-localeurls.png)](http://travis-ci.org/codemix/yii2-localeurls)
-[![Latest Stable Version](https://poser.pugx.org/codemix/yii2-localeurls/v/stable.svg)](https://packagist.org/packages/codemix/yii2-localeurls)
-[![Total Downloads](https://poser.pugx.org/codemix/yii2-localeurls/downloads)](https://packagist.org/packages/codemix/yii2-localeurls)
-[![Latest Unstable Version](https://poser.pugx.org/codemix/yii2-localeurls/v/unstable.svg)](https://packagist.org/packages/codemix/yii2-localeurls)
-[![License](https://poser.pugx.org/codemix/yii2-localeurls/license.svg)](https://packagist.org/packages/codemix/yii2-localeurls)
+[![Build Status](https://secure.travis-ci.org/daxslab/yii2-localeurls.png)](http://travis-ci.org/daxslab/yii2-localeurls)
+[![Latest Stable Version](https://poser.pugx.org/daxslab/yii2-localeurls/v/stable.svg)](https://packagist.org/packages/daxslab/yii2-localeurls)
+[![Total Downloads](https://poser.pugx.org/daxslab/yii2-localeurls/downloads)](https://packagist.org/packages/daxslab/yii2-localeurls)
+[![Latest Unstable Version](https://poser.pugx.org/daxslab/yii2-localeurls/v/unstable.svg)](https://packagist.org/packages/daxslab/yii2-localeurls)
+[![License](https://poser.pugx.org/daxslab/yii2-localeurls/license.svg)](https://packagist.org/packages/daxslab/yii2-localeurls)
 
 
-Automatic locale/language management through URLs for Yii 2.
+Forked from codemix/yii2-localeurls, Automatic locale/language management through URLs for Yii 2.
 
 > **IMPORTANT:** If you upgraded from version 1.0.* you have to modify your configuration.
 > Please check the section on [Upgrading](#upgrading) below.
@@ -45,7 +45,7 @@ All the above (and more) is configurable of course.
 
 Install the package through [composer](http://getcomposer.org):
 
-    composer require codemix/yii2-localeurls
+    composer require daxslab/yii2-localeurls
 
 And then add this to your application configuration:
 
@@ -60,7 +60,7 @@ return [
 
         // Override the urlManager component
         'urlManager' => [
-            'class' => 'codemix\localeurls\UrlManager',
+            'class' => 'daxslab\localeurls\UrlManager',
 
             // List all supported languages here
             // Make sure, you include your app's default language.
@@ -262,7 +262,7 @@ how this can be used to track user languages in the database:
 <?php
 
 'urlManager' => [
-    'class' => 'codemix\localeurls\UrlManager',
+    'class' => 'daxslab\localeurls\UrlManager',
     'languages' => ['en', 'fr', 'de'],
     'on languageChanged' => `\app\components\User::onLanguageChanged',
 ]
@@ -470,7 +470,7 @@ return [
             'enablePersistence' => false,
         ],
         'urlManager' => [
-            'class' => 'codemix\localeurls\UrlManager',
+            'class' => 'daxslab\localeurls\UrlManager',
         ]
     ]
 ];
@@ -483,7 +483,7 @@ you should now change it to:
 return [
     'components' => [
         'urlManager' => [
-            'class' => 'codemix\localeurls\UrlManager',
+            'class' => 'daxslab\localeurls\UrlManager',
             'languages' => ['en-US', 'en', 'fr', 'de', 'es-*'],
             'enableDefaultLanguageUrlCode' => true,
             'enableLanguagePersistence' => false,
